@@ -29,9 +29,6 @@
     <ClInclude Include="Player.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Header.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
     <ClInclude Include="PlayerManager.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>

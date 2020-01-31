@@ -155,7 +155,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameManager.h" />
-    <ClInclude Include="Header.h" />
     <ClInclude Include="Hero.h" />
     <ClInclude Include="HeroManager.h" />
     <ClInclude Include="Player.h" />

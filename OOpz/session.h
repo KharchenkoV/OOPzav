@@ -27,16 +27,24 @@ public:
 	};
 	Teamred tr;
 	Teamblue tb;
-	void CalculateWinner() {
+	string CalculateWinner() {
 		tr.Calculate();
 		tb.Calculate();
 		double indred = (double)tr.hp / tb.damage;
 		double indblue = (double)tb.hp / tr.damage;
-		if (indblue > indred)
+		string win;
+		if (indblue > indred) {
 			cout << "Blue Win" << endl;
-		else if (indblue < indred)
+			win = "Blue Win";
+		}
+		else if (indblue < indred) {
 			cout << "Red Win" << endl;
-		else if (indblue == indred)
+			win = "Red Win";
+		}
+		else if (indblue == indred) {
 			cout << "Draw" << endl;
+			win = "Draw";
+		}
+		return win;
 	}
 };

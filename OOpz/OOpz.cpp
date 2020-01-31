@@ -1,16 +1,26 @@
-﻿#include"Session.h"
+﻿#include"GameManager.h"
+
 int main() {
-	
-	HeroManager hm;
-	PlayerMeneger pm;
+	GameManager gm;
 	TeamManager tm;
-	Session sn;
-	 
-	hm.createHeroes(10);
-	pm.CreatePlayer(10);
-	tm.CreatTeams();
-	tm.ListTeams();
-	sn.CalculateWinner();
+	int a;
+	cout << "\t1. Start game\n\t2. List of teams\n\t3. List of sessions\n\t4. Exit\nEnter number:";
+	cin >> a;
+	while (true) {
+		switch (a) {
+		case 1:
+			gm.SimulateGame();
+			break;
+		case 2:
+			tm.ListTeams();
+			break;
+		case 3:
+			gm.ListSession();
+			break;
+		}
+		if (a == 4)
+			break;
+	}
 
 	system("pause");
 	return 0;
